@@ -1,10 +1,19 @@
-
 #container{
-    width: 400px;
-    height: 400px;
+    height: 646px;
+    width: 646px;
+    border: Pink solid 40px;
+    border-radius: 10px;
 }
-.box{
-    margin: 0;
-    padding: 0;
-  
+#box{
+    border: white solid 2px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+button{
+    width: 100px;
+    height: 50px;
 }
