@@ -1,16 +1,19 @@
 let container = document.querySelector('div');
 container.style.display = 'grid';
+container.style.gridTemplateColumns = 'repeat(16, 1fr)'
 
 
 
 for(i = 0; i < 256; i++){
     let div = document.createElement('div');
-    div.style.height = '40px'
-    div.style.width = '40px'
+    div.style.height = '25px'
+    div.style.width = '25px'
     div.style.backgroundColor ="black"
+    div.classList.add('box')
+    
     container.appendChild(div)  
 }
-container.style.gridTemplateColumns = 'repeat(16, 1fr)'
+
 
 container.addEventListener("mouseover", function(event){
     event.target.style.backgroundColor = 'white'
