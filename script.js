@@ -10,7 +10,7 @@ function changeTheSize(element){
         div.style.backgroundColor ="black"
         div.classList.add('box')
         newContainer.appendChild(div)
-        console.log(element)  
+        
     }
     newContainer.style.display = 'grid';
     newContainer.style.gridTemplateColumns = 'repeat('+element+', 1fr)'
@@ -45,9 +45,7 @@ button.addEventListener('click', () => {
 
 let buttonForSize = document.getElementById("size")
 buttonForSize.addEventListener('click', () =>{  
-    let newSize = prompt('Enter a number between 0 and 99 for the next size')
-    while(newSize >= 100){
-        newSize = prompt('Please enter a number between 0 and 99')
-    }
+    let newSize = buttonForSize.value
+    console.log(newSize)
     changeTheSize(newSize)
 })
