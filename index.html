@@ -4,21 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Etch A Sketch</title>
 </head>
-<body>
+<body class="container-fluid">
     <main>
-        <div id="container" class="container"></div>
-        <button id="button">Clear the grid</button>
-        <aside>
-            <input type="range" id="size" name="size" value="0" min="0" max="96" step="8">
-            <label for="size">Choose a new size</label>
-        </aside>
+        <section class="row">
+            <section class="col-md-2 align-self-center">
+                <p>Let's</p>
+            </section>
+            <section id="container" class="col-md-6" style=" border-top: 35px #E9B271 solid; border-left: 35px #E9B271 solid; border-right: 35px #E9B271 solid; border-top-left-radius: 10%; border-top-right-radius: 10%"></section>
+            <section class="col-md-2 align-self-center">
+                <p>
+                    Draw
+                </p>
+            </section>
+        </section>
+            <section class="row justify-content-between" style="height: 84px; width: 630px; margin-left: auto; margin-right: auto; border-left: 35px #E9B271 solid; border-right: 35px #E9B271 solid; border-bottom: 35px #E9B271 solid; border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; background-color: #E9B271; padding-top: 1%;">
+                <section class="col-md-4">
+                    <button id="button">Clear</button>
+                </section>
+                <section class="col-md-4">
+                    <input type="range" id="size" name="size" value="" min="16" max="96" step="8">
+                    <label for="size">Choose a new size</label>    
+                </section>
+            </section>
+        
+        
     </main>
-    <section>
-        <h1>Let's Draw !</h1>
-    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+
 </body>
 </html>

@@ -3,8 +3,9 @@ container.style.display = 'grid';
 container.style.gridTemplateColumns = 'repeat(16, 1fr)'
 
 function changeTheSize(element){
-    let newContainer = document.createElement('div')
+    let newContainer = document.createElement('section')
     newContainer.setAttribute('id','container')
+    newContainer.classList.add('newContainer')
     for(i = 0; i < (element*element); i++){ 
         let div = document.createElement('div');
         div.style.backgroundColor ="black"
@@ -19,6 +20,7 @@ function changeTheSize(element){
     parentDiv.replaceChild(newContainer, container)
     newContainer.addEventListener("mouseover", function(event){
         event.target.style.backgroundColor = 'white'
+        newContainer.style.backgroundColor = 'rgb(233, 178, 113)'
     })
 
 }
@@ -33,6 +35,7 @@ for(i = 0; i < 256; i++){
 
 container.addEventListener("mouseover", function(event){
     event.target.style.backgroundColor = 'white'
+    container.style.backgroundColor = 'rgb(233, 178, 113)'
 })
 
 let button = document.getElementById('button')

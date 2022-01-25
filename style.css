@@ -1,25 +1,32 @@
 #container{
-    height: 646px;
-    width: 646px;
-    border: Pink solid 40px;
-    border-radius: 10px;
+    height: 630px;
+    width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(233, 178, 113);
+}
+.newContainer{
+    height: 630px;
+    width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 35px #E9B271 solid; border-left: 35px #E9B271 solid; border-right: 35px #E9B271 solid; border-top-left-radius: 10%; border-top-right-radius: 10%
 }
 #box{
     border: white solid 2px;
 }
 
-main{
-    display: flex;
-    align-items: center;
-    gap: 15px;
+#button{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px red solid;
+    font-size: x-small;
 }
-button{
-    width: 100px;
-    height: 50px;
-}
-h1{
+p{
     display: flex;
     justify-content: center;
     font-family: cursive;
     font-size: 4em;
+    color: #E9B271;
 }
